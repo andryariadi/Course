@@ -1,7 +1,10 @@
 export default function HomePage() {
   return (
     <>
-      <h1>Home Page</h1>
+      <div className="homepage">
+        <header></header>
+        <div className="kelas w-100 min-vh-100"></div>
+      </div>
     </>
   );
 }

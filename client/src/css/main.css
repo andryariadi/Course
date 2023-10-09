@@ -15,6 +15,8 @@
   position: fixed;
   padding: 15px 0 15px 0;
   width: 100%;
+  transition: all 0.2s ease;
+  z-index: 9999;
 }
 
 .navbar a {
@@ -30,4 +32,71 @@
   transition: 800ms;
 }
 
+.navbar .active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  margin: 0 5px 0 5px;
+}
+
+.navbar .active:hover {
+  color: var(--navbar-color);
+  border-radius: 5px;
+}
+
+.navbar.color-active {
+  background-color: var(--navbar-color);
+  padding: 20px 0 20px 0;
+  border-bottom: 2px solid #dc35463b;
+}
 /* Navbar */
+
+/* Header */
+.homepage header {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(270deg, #64e8df, #fbd786, #ff668d);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite; */
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Header */
