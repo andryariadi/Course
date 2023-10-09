@@ -55,6 +55,8 @@
 .homepage header {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
   /* background: linear-gradient(270deg, #64e8df, #fbd786, #ff668d);
   background-size: 600% 600%;
 
@@ -97,6 +99,54 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.homepage .header-box h1 {
+  font-size: 3.2 rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.homepage .header-box h1 span {
+  font-weight: 800;
+  color: #dc3545;
+}
+
+.homepage .header-box p {
+  font-weight: 500;
+  line-height: 2;
+  color: var(--color-text);
+}
+
+.homepage .header-box img {
+  width: 100%;
+  height: 550px;
+  animation: UpDown 9000ms ease-in-out infinite;
+}
+
+@keyframes UpDown {
+  0% {
+    transform: translateY(5%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homepage .header-box {
+    padding-top: 7rem;
+  }
+
+  .homepage .header-box img {
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-inline: auto;
   }
 }
 /* Header */
