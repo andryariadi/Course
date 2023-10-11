@@ -150,3 +150,46 @@
   }
 }
 /* Header */
+
+/* Kelas */
+.homepage .kelas {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.homepage .kelas .row:nth-child(1) {
+  padding: 150px 0 100px 0;
+}
+
+.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.homepage .kelas .row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-inline: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.homepage .kelas .row:nth-child(2) .col {
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 38px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 10px 38px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 10px 38px -7px rgba(0, 0, 0, 0.75);
+}
+
+.homepage .kelas .row:nth-child(2) img {
+  width: 100%;
+  height: 250px;
+}
+
+.homepage .kelas .row:nth-child(2) .start {
+  color: gold;
+}
+/* Kelas */

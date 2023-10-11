@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Dream from "../assets/dream.png";
+import { kelasTerbaru } from "../data/index";
 
 export default function HomePage() {
   return (
@@ -24,7 +25,37 @@ export default function HomePage() {
             </Row>
           </Container>
         </header>
-        <div className="kelas w-100 min-vh-100"></div>
+        <div className="kelas w-100 min-vh-100">
+          <Container>
+            <Row>
+              <Col>
+                <h1 className="text-center fw-bold">Kelas Terbaru</h1>
+                <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </Col>
+            </Row>
+            <Row>
+              {kelasTerbaru.map((kelas) => {
+                return (
+                  <Col key={kelas.id}>
+                    <img src={kelas.image} alt="Kelas" className="mb-5 rounded-1" />
+                    <div className="start px-3 mb-2">
+                      <i className={kelas.star1}></i>
+                      <i className={kelas.star2}></i>
+                      <i className={kelas.star3}></i>
+                      <i className={kelas.star4}></i>
+                      <i className={kelas.star5}></i>
+                    </div>
+                    <h5 className="px-3 mb-5">{kelas.title}</h5>
+                    <div className="d-flex justify-content-between align-items-center px-3 pb-3">
+                      <p className="text-primary fw-bold m-0">{kelas.price}</p>
+                      <button className="btn btn-outline-danger rounded-1">{kelas.buy}</button>
+                    </div>
+                  </Col>
+                );
+              })}
+            </Row>
+          </Container>
+        </div>
       </div>
     </>
   );
