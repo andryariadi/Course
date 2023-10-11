@@ -179,9 +179,9 @@
   background-color: #ffffff;
   padding: 0;
   border-radius: 5px;
-  box-shadow: 0px 10px 38px -7px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 3px 10px 38px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 10px 38px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 23px 38px -17px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: 0px 23px 38px -17px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 0px 23px 38px -17px rgba(0, 0, 0, 0.77);
 }
 
 .homepage .kelas .row:nth-child(2) img {
@@ -192,4 +192,89 @@
 .homepage .kelas .row:nth-child(2) .start {
   color: gold;
 }
+
+.homepage .kelas .row:nth-child(2) .col h5 {
+  color: var(--color-text);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.homepage .kelas .row:nth-child(3) {
+  padding-top: 80px;
+}
 /* Kelas */
+
+/* Testimonial */
+.homepage .testimonial {
+  background-color: var(--primary-color);
+}
+
+.homepage .testimonial h1 {
+  color: var(--color-text);
+}
+
+.homepage .testimonial .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.homepage .testimonial .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  padding: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.homepage .testimonial .swiper-slide:active {
+  cursor: grabbing;
+}
+
+.homepage .testimonial .swiper-slide .desc {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.homepage .testimonial .swiper-slide .people {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+}
+.homepage .testimonial .swiper-slide .people h5,
+.homepage .testimonial .swiper-slide .people p {
+  color: var(--color-text);
+}
+
+.homepage .testimonial .swiper-slide .people h5 {
+  font-weight: 600;
+}
+
+.homepage .testimonial .swiper-slide .people p {
+  opacity: 50%;
+}
+
+.homepage .testimonial .swiper-slide .people img {
+  width: 80px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage .testimonial .swiper {
+    padding-inline: 0px;
+  }
+
+  .homepage .testimonial .swiper-slide .people {
+    justify-content: center;
+  }
+}
+/* Testimonial */
