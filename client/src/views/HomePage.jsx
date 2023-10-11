@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Dream from "../assets/dream.png";
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import { useNavigate } from "react-router-dom";
+import FaqComponent from "../components/Faq";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -132,6 +133,10 @@ export default function HomePage() {
             </Row>
           </Container>
         </div>
+
+        {/* FAQ */}
+        <FaqComponent />
+        {/* FAQ */}
       </div>
     </>
   );
