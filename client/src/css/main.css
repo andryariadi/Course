@@ -389,7 +389,7 @@
 /* FAQ */
 .faq {
   background-color: var(--primary-color);
-  padding: 100px 0 100px 0;
+  padding: 150px 0 100px 0;
 }
 
 .faq h2 {
@@ -412,6 +412,18 @@
   background-color: #ffffff;
 }
 /* FAQ */
+
+/* Syarat */
+
+.syarat {
+  padding: 150px 0 0 0;
+  background-color: var(--primary-color);
+}
+
+.syarat .row:nth-child(2) p {
+  line-height: 2;
+}
+/* Syarat */
 
 /* Footer */
 .footer {

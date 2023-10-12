@@ -1,7 +1,9 @@
+import FaqComponent from "../components/Faq";
+
 export default function FaqPage() {
   return (
     <>
-      <h1>Faq Page</h1>
+      <FaqComponent />
     </>
   );
 }
