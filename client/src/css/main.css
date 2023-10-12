@@ -332,6 +332,60 @@
 }
 /* Testimonial */
 
+/* Semua Testimonial */
+.semua-testimonial {
+  padding: 150px 0 100px 0;
+  background-color: var(--primary-color);
+}
+
+.semua-testimonial .row:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+.semua-testimonial .row:nth-child(1) h1,
+.semua-testimonial .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.semua-testimonial .row:nth-child(2) {
+  justify-content: space-evenly;
+}
+.semua-testimonial .row:nth-child(2) .col {
+  /* background-color: #dc3545; */
+  width: 350px;
+}
+
+.semua-testimonial .desc {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.semua-testimonial .people {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+}
+.semua-testimonial .people h5,
+.semua-testimonial .people p {
+  color: var(--color-text);
+}
+
+.semua-testimonial .people h5 {
+  font-weight: 600;
+}
+
+.semua-testimonial .people p {
+  opacity: 50%;
+}
+
+.semua-testimonial .people img {
+  width: 80px;
+  border-radius: 100%;
+}
+/* Semua Testimonial */
+
 /* FAQ */
 .faq {
   background-color: var(--primary-color);

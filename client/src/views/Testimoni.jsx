@@ -1,7 +1,35 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { testimonial } from "../data/index";
+
 export default function TestimoniPage() {
   return (
     <>
-      <h1>Testimoni Page</h1>
+      <div className="semua-testimonial">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="fw-bold text-center">Semua Testimonial</h1>
+              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </Col>
+          </Row>
+          <Row className="row-cols-lg-3 row-cols-1">
+            {testimonial.map((swiper) => {
+              return (
+                <Col key={swiper.id} className="mb-5 shadow rounded-1">
+                  <div className="people py-4">
+                    <img src={swiper.image} alt="Swiper" />
+                    <div>
+                      <h5 className="mb-1">{swiper.name}</h5>
+                      <p className="fw-bold m-0">{swiper.skill}</p>
+                    </div>
+                  </div>
+                  <p className="desc pb-3">{swiper.desc}</p>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      </div>
     </>
   );
 }
