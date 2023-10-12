@@ -1,7 +1,7 @@
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { faq } from "../data/index";
 
-export default function Faq() {
+export default function FaqComponent() {
   return (
     <>
       <div className="faq">
