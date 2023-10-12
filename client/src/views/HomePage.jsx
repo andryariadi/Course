@@ -3,7 +3,7 @@ import Dream from "../assets/dream.png";
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import { useNavigate } from "react-router-dom";
 import FaqComponent from "../components/Faq";
-
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -19,6 +19,11 @@ export default function HomePage() {
   const handleKelas = () => {
     navigate("/kelas");
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="homepage">
@@ -31,7 +36,9 @@ export default function HomePage() {
                 </h1>
                 <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero animi dolore veniam impedit sit.</p>
                 <div className="btn-header">
-                  <button className="btn btn-danger btn-md me-2">Lihat Kelas</button>
+                  <button onClick={handleKelas} className="btn btn-danger btn-md me-2">
+                    Lihat Kelas
+                  </button>
                   <button className="btn btn-outline-danger btn-md">Lihat Promo</button>
                 </div>
               </Col>

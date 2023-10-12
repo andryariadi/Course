@@ -1,7 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaKelas } from "../data/index";
+import { useEffect } from "react";
 
 export default function KelasPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="semua-kelas min-vh-100">

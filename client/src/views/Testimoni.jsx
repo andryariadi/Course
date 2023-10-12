@@ -1,7 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { testimonial } from "../data/index";
+import { useEffect } from "react";
 
 export default function TestimoniPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="semua-testimonial">

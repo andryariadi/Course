@@ -1,6 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useEffect } from "react";
 
 export default function SyaratPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="syarat min-vh-100">
