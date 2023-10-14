@@ -17,6 +17,8 @@
   width: 100%;
   transition: all 0.2s ease;
   z-index: 9999;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
 }
 
 .navbar a {
@@ -106,6 +108,7 @@
   font-size: 3.2 rem;
   font-weight: 600;
   color: var(--color-text);
+  animation-delay: 0.6s;
 }
 
 .homepage .header-box h1 span {
@@ -117,6 +120,11 @@
   font-weight: 500;
   line-height: 2;
   color: var(--color-text);
+  animation-delay: 1s;
+}
+
+.homepage .header-box button {
+  animation-delay: 1.4s;
 }
 
 .homepage .header-box img {
