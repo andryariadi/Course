@@ -12,14 +12,14 @@ export default function KelasPage() {
         <Container>
           <Row>
             <Col>
-              <h1 className="fw-bold text-center">Semua Kelas</h1>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp">Semua Kelas</h1>
+              <p className="text-center animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Col>
           </Row>
           <Row>
             {semuaKelas.map((kelas) => {
               return (
-                <Col key={kelas.id}>
+                <Col key={kelas.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={kelas.delay}>
                   <img src={kelas.image} alt="Kelas" className="mb-5 rounded-1" />
                   <div className="start px-3 mb-2">
                     <i className={kelas.star1}></i>

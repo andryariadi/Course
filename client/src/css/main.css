@@ -353,6 +353,7 @@
 .semua-testimonial .row:nth-child(1) h1,
 .semua-testimonial .row:nth-child(1) p {
   color: var(--color-text);
+  animation-delay: 0.5s;
 }
 
 .semua-testimonial .row:nth-child(2) {
@@ -426,6 +427,10 @@
 .syarat {
   padding: 150px 0 0 0;
   background-color: var(--primary-color);
+}
+.syarat .row:nth-child(1) h1,
+.syarat .row:nth-child(1) p {
+  animation-delay: 0.5s;
 }
 
 .syarat .row:nth-child(2) p {

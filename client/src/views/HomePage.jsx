@@ -61,7 +61,7 @@ export default function HomePage() {
             <Row>
               {kelasTerbaru.map((kelas) => {
                 return (
-                  <Col key={kelas.id}>
+                  <Col key={kelas.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={kelas.delay}>
                     <img src={kelas.image} alt="Kelas" className="mb-5 rounded-1" />
                     <div className="start px-3 mb-2">
                       <i className={kelas.star1}></i>
@@ -81,7 +81,7 @@ export default function HomePage() {
             </Row>
             <Row>
               <Col className="text-center">
-                <button onClick={handleKelas} className="btn btn-primary rounded-5 btn-md">
+                <button data-aos="fade-up" data-aos-duration="1000" onClick={handleKelas} className="btn btn-primary rounded-5 btn-md">
                   Class List
                   <i className="fa-solid fa-chevron-right ms-1"></i>
                 </button>
@@ -126,7 +126,7 @@ export default function HomePage() {
               >
                 {dataSwiper.map((swiper) => {
                   return (
-                    <SwiperSlide key={swiper.id} className="shadow rounded-1">
+                    <SwiperSlide key={swiper.id} className="shadow rounded-1" data-aos="fade-up" data-aos-duration="1000">
                       <p className="desc">{swiper.desc}</p>
                       <div className="people">
                         <img src={swiper.image} alt="Swiper" />

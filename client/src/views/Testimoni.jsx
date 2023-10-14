@@ -12,14 +12,14 @@ export default function TestimoniPage() {
         <Container>
           <Row>
             <Col>
-              <h1 className="fw-bold text-center">Semua Testimonial</h1>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp">Semua Testimonial</h1>
+              <p className="text-center animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Col>
           </Row>
           <Row className="row-cols-lg-3 row-cols-1">
             {testimonial.map((swiper) => {
               return (
-                <Col key={swiper.id} className="mb-5 shadow rounded-1">
+                <Col key={swiper.id} className="mb-5 shadow rounded-1" data-aos="fade-up" data-aos-duration="1000">
                   <div className="people py-4">
                     <img src={swiper.image} alt="Swiper" />
                     <div>

@@ -11,8 +11,8 @@ export default function SyaratPage() {
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center fw-bold mb-2">Syarat & Ketentuan</h1>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h1 className="text-center fw-bold mb-2 animate__animated animate__fadeInUp">Syarat & Ketentuan</h1>
+              <p className="text-center animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Col>
           </Row>
           <Row className="pt-5">
